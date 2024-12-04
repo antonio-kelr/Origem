@@ -1,0 +1,73 @@
+.hero_contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+}
+.titles {
+  line-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+.hero_contato h3 {
+  color: #d91e26;
+  font-family: "Oswald", Sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 35px;
+
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+.title_segudario {
+  font-family: "Oswald", Sans-serif;
+  line-height: 35px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+  color: #0b4863;
+  margin-bottom: 20px;
+}
+.form_contatoS {
+  width: 100%;
+  max-width: 450px;
+}
+.form_contatoS label > span {
+  color: #d91e26;
+  padding-left: 5px;
+}
+.buto_contato {
+  font-family: "Roboto", Sans-serif;
+  font-size: 0.7rem;
+  margin-top: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.7em;
+  letter-spacing: 1.2px;
+  border-radius: 1px 1px 1px 1px;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif;
+}
+.form_contatoS label,
+input {
+  display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 405px) {
+  .form_contatoS {
+    width: 100%;
+    max-width: 500px;
+  }
+  .hero_contato {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+  }
+}
