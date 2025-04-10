@@ -12,14 +12,14 @@ import latao2 from "../../img/pngwing.com-1-pl6u98haej9v9z9go0rok8j5hw9bhvywnayc
 import latao3 from "../../img/fornecedor-de-tubo-de-bronze_10109_324454_1586883390307_cover-removebg-preview-pl6ymwwmv14gv484xofoby3svt2xq0xxbqnl7yolh4.png";
 import latao4 from "../../img/chapa-de-celeron-industrial-01-1-pl6zdguhxjh2ujnkvnn99qvl0o7867cxz64eadb7p4.png";
 import Aluminio from "../../img/produto-aluminio.png";
-import Rodape from "../rodape/rodape";
+import Rodape from "../components/rodape/rodape";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./home.css";
 
 import Origem from "../../img/nova-logo-pl1qfrzfpgkc01s46bfhppm1q9s0a76si0qv6stngg.png";
 import { useEffect, useRef, useState } from "react";
-import Produto from "../produto/produto";
+import Produto from "../components/produto/produto";
 
 const Home = () => {
   const [count1, setCount1] = useState<number>(0);

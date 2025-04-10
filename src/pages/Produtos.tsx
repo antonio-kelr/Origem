@@ -7,7 +7,7 @@ import latao2 from "../..//../../img/pngwing.com-1-pl6u98haej9v9z9go0rok8j5hw9bh
 import latao3 from "../..//../../img/fornecedor-de-tubo-de-bronze_10109_324454_1586883390307_cover-removebg-preview-pl6ymwwmv14gv484xofoby3svt2xq0xxbqnl7yolh4.png";
 import latao4 from "../..//../../img/chapa-de-celeron-industrial-01-1-pl6zdguhxjh2ujnkvnn99qvl0o7867cxz64eadb7p4.png";
 
-import Produto from "../../../produto/produto";
+import Produto from "../components/produto/produto";
 
 const Produtos = () => {
   useEffect(() => {
