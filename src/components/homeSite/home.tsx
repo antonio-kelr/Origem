@@ -21,6 +21,7 @@ import "./home.css";
 
 import Origem from "../../img/nova-logo-pl1qfrzfpgkc01s46bfhppm1q9s0a76si0qv6stngg.png";
 import { useEffect, useRef, useState } from "react";
+import Produto from "../produto/produto";
 
 const Home = () => {
   const [count1, setCount1] = useState<number>(0);
@@ -228,620 +229,62 @@ const Home = () => {
         </section>
       </main>
       <main className="main_produtos">
-        <h2 className="title_produtos" data-aos="flip-up" >nossos produtos</h2>
+        <h2 className="title_produtos" data-aos="flip-up">nossos produtos</h2>
         <div className="produtos_grids">
-          <div className="produtos" data-aos="fade-up">
-            <div className="imagem-container">
-              <img src={latao} alt="Descrição da imagem" />
-            </div>
-            <div className="detalhes_produtos">
-              <h2>aço inox</h2>
-              <div>
-                <FontAwesomeIcon
-                  icon={faDotCircle}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Tipos: <span>304 - 316 - 310 - 420 - 430</span>{" "}
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faCube}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Chapas: <span> Foscas, escovadas, polidas e brilhantes</span>
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faDiceSix}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Barras:{" "}
-                  <span>
-                    Redondas, chatas, quadradas, sextavadas e cantoneiras
-                  </span>
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faDatabase}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Tubos:{" "}
-                  <span>Polidos, escovados, decapados, OD e schedule</span>
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faCommentDots}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Mais informações:{" "}
-                  <span>Conexões, Telas, Eletrodos, etc...</span>
-                </span>
-              </div>
-              <div className="butao_orcamento">
-                <button>
-                  {" "}
-                  <FontAwesomeIcon
-                    icon={faWhatsapp}
-                    style={{ fontSize: "13px" }}
-                  />{" "}
-                  fazer orçamento
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="produtos" data-aos="fade-down">
-            <div className="imagem-container">
-              <img src={latao} alt="Descrição da imagem" />
-            </div>
-            <div className="detalhes_produtos">
-              <h2>aço inox</h2>
-              <div>
-                <FontAwesomeIcon
-                  icon={faDotCircle}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Tipos: <span>304 - 316 - 310 - 420 - 430</span>{" "}
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faCube}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Chapas: <span> Foscas, escovadas, polidas e brilhantes</span>
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faDiceSix}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Barras:{" "}
-                  <span>
-                    Redondas, chatas, quadradas, sextavadas e cantoneiras
-                  </span>
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faDatabase}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Tubos:{" "}
-                  <span>Polidos, escovados, decapados, OD e schedule</span>
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faCommentDots}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Mais informações:{" "}
-                  <span>Conexões, Telas, Eletrodos, etc...</span>
-                </span>
-              </div>
-              <div className="butao_orcamento">
-                <button>
-                  {" "}
-                  <FontAwesomeIcon
-                    icon={faWhatsapp}
-                    style={{ fontSize: "13px" }}
-                  />{" "}
-                  fazer orçamento
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="produtos" data-aos="fade-left">
-            <div className="imagem-container">
-              <img src={latao} alt="Descrição da imagem" />
-            </div>
-            <div className="detalhes_produtos">
-              <h2>aço inox</h2>
-              <div>
-                <FontAwesomeIcon
-                  icon={faDotCircle}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Tipos: <span>304 - 316 - 310 - 420 - 430</span>{" "}
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faCube}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Chapas: <span> Foscas, escovadas, polidas e brilhantes</span>
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faDiceSix}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Barras:{" "}
-                  <span>
-                    Redondas, chatas, quadradas, sextavadas e cantoneiras
-                  </span>
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faDatabase}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Tubos:{" "}
-                  <span>Polidos, escovados, decapados, OD e schedule</span>
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faCommentDots}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Mais informações:{" "}
-                  <span>Conexões, Telas, Eletrodos, etc...</span>
-                </span>
-              </div>
-              <div className="butao_orcamento">
-                <button>
-                  {" "}
-                  <FontAwesomeIcon
-                    icon={faWhatsapp}
-                    style={{ fontSize: "13px" }}
-                  />{" "}
-                  fazer orçamento
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="produtos" data-aos="fade-right">
-            <div className="imagem-container">
-              <img src={latao} alt="Descrição da imagem" />
-            </div>
-            <div className="detalhes_produtos">
-              <h2>aço inox</h2>
-              <div>
-                <FontAwesomeIcon
-                  icon={faDotCircle}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Tipos: <span>304 - 316 - 310 - 420 - 430</span>{" "}
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faCube}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Chapas: <span> Foscas, escovadas, polidas e brilhantes</span>
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faDiceSix}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Barras:{" "}
-                  <span>
-                    Redondas, chatas, quadradas, sextavadas e cantoneiras
-                  </span>
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faDatabase}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Tubos:{" "}
-                  <span>Polidos, escovados, decapados, OD e schedule</span>
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faCommentDots}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Mais informações:{" "}
-                  <span>Conexões, Telas, Eletrodos, etc...</span>
-                </span>
-              </div>
-              <div className="butao_orcamento">
-                <button>
-                  {" "}
-                  <FontAwesomeIcon
-                    icon={faWhatsapp}
-                    style={{ fontSize: "13px" }}
-                  />{" "}
-                  fazer orçamento
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="produtos" data-aos="fade-left">
-            <div className="imagem-container">
-              <img src={latao} alt="Descrição da imagem" />
-            </div>
-            <div className="detalhes_produtos">
-              <h2>aço inox</h2>
-              <div>
-                <FontAwesomeIcon
-                  icon={faDotCircle}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Tipos: <span>304 - 316 - 310 - 420 - 430</span>{" "}
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faCube}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Chapas: <span> Foscas, escovadas, polidas e brilhantes</span>
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faDiceSix}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Barras:{" "}
-                  <span>
-                    Redondas, chatas, quadradas, sextavadas e cantoneiras
-                  </span>
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faDatabase}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Tubos:{" "}
-                  <span>Polidos, escovados, decapados, OD e schedule</span>
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faCommentDots}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Mais informações:{" "}
-                  <span>Conexões, Telas, Eletrodos, etc...</span>
-                </span>
-              </div>
-              <div className="butao_orcamento">
-                <button>
-                  {" "}
-                  <FontAwesomeIcon
-                    icon={faWhatsapp}
-                    style={{ fontSize: "13px" }}
-                  />{" "}
-                  fazer orçamento
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="produtos" data-aos="fade-right">
-            <div className="imagem-container">
-              <img src={latao} alt="Descrição da imagem" />
-            </div>
-            <div className="detalhes_produtos">
-              <h2>aço inox</h2>
-              <div>
-                <FontAwesomeIcon
-                  icon={faDotCircle}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Tipos: <span>304 - 316 - 310 - 420 - 430</span>{" "}
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faCube}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Chapas: <span> Foscas, escovadas, polidas e brilhantes</span>
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faDiceSix}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Barras:{" "}
-                  <span>
-                    Redondas, chatas, quadradas, sextavadas e cantoneiras
-                  </span>
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faDatabase}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Tubos:{" "}
-                  <span>Polidos, escovados, decapados, OD e schedule</span>
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faCommentDots}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Mais informações:{" "}
-                  <span>Conexões, Telas, Eletrodos, etc...</span>
-                </span>
-              </div>
-              <div className="butao_orcamento">
-                <button>
-                  {" "}
-                  <FontAwesomeIcon
-                    icon={faWhatsapp}
-                    style={{ fontSize: "13px" }}
-                  />{" "}
-                  fazer orçamento
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="produtos" data-aos="fade-left">
-            <div className="imagem-container">
-              <img src={latao} alt="Descrição da imagem" />
-            </div>
-            <div className="detalhes_produtos">
-              <h2>aço inox</h2>
-              <div>
-                <FontAwesomeIcon
-                  icon={faDotCircle}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Tipos: <span>304 - 316 - 310 - 420 - 430</span>{" "}
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faCube}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Chapas: <span> Foscas, escovadas, polidas e brilhantes</span>
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faDiceSix}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Barras:{" "}
-                  <span>
-                    Redondas, chatas, quadradas, sextavadas e cantoneiras
-                  </span>
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faDatabase}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Tubos:{" "}
-                  <span>Polidos, escovados, decapados, OD e schedule</span>
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faCommentDots}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Mais informações:{" "}
-                  <span>Conexões, Telas, Eletrodos, etc...</span>
-                </span>
-              </div>
-              <div className="butao_orcamento">
-                <button>
-                  {" "}
-                  <FontAwesomeIcon
-                    icon={faWhatsapp}
-                    style={{ fontSize: "13px" }}
-                  />{" "}
-                  fazer orçamento
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="produtos" data-aos="fade-right">
-            <div className="imagem-container">
-              <img src={latao} alt="Descrição da imagem" />
-            </div>
-            <div className="detalhes_produtos">
-              <h2>aço inox</h2>
-              <div>
-                <FontAwesomeIcon
-                  icon={faDotCircle}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Tipos: <span>304 - 316 - 310 - 420 - 430</span>{" "}
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faCube}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Chapas: <span> Foscas, escovadas, polidas e brilhantes</span>
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faDiceSix}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Barras:{" "}
-                  <span>
-                    Redondas, chatas, quadradas, sextavadas e cantoneiras
-                  </span>
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faDatabase}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Tubos:{" "}
-                  <span>Polidos, escovados, decapados, OD e schedule</span>
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faCommentDots}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Mais informações:{" "}
-                  <span>Conexões, Telas, Eletrodos, etc...</span>
-                </span>
-              </div>
-              <div className="butao_orcamento">
-                <button>
-                  {" "}
-                  <FontAwesomeIcon
-                    icon={faWhatsapp}
-                    style={{ fontSize: "13px" }}
-                  />{" "}
-                  fazer orçamento
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="produtos" data-aos="fade-left">
-            <div className="imagem-container">
-              <img src={latao} alt="Descrição da imagem" />
-            </div>
-            <div className="detalhes_produtos">
-              <h2>aço inox</h2>
-              <div>
-                <FontAwesomeIcon
-                  icon={faDotCircle}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Tipos: <span>304 - 316 - 310 - 420 - 430</span>{" "}
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faCube}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Chapas: <span> Foscas, escovadas, polidas e brilhantes</span>
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faDiceSix}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Barras:{" "}
-                  <span>
-                    Redondas, chatas, quadradas, sextavadas e cantoneiras
-                  </span>
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faDatabase}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Tubos:{" "}
-                  <span>Polidos, escovados, decapados, OD e schedule</span>
-                </span>
-              </div>
-              <div>
-                <FontAwesomeIcon
-                  icon={faCommentDots}
-                  style={{ fontSize: "13px", color: "#0B4863" }}
-                />
-                <span>
-                  Mais informações:{" "}
-                  <span>Conexões, Telas, Eletrodos, etc...</span>
-                </span>
-              </div>
-              <div className="butao_orcamento">
-                <button>
-                  {" "}
-                  <FontAwesomeIcon
-                    icon={faWhatsapp}
-                    style={{ fontSize: "13px" }}
-                  />{" "}
-                  fazer orçamento
-                </button>
-              </div>
-            </div>
-          </div>
+          <Produto 
+            imagem={latao}
+            titulo="aço inox"
+            tipos={["304", "316", "310", "420", "430"]}
+            chapas={["Foscas", "escovadas", "polidas", "brilhantes"]}
+            barras={["Redondas", "chatas", "quadradas", "sextavadas", "cantoneiras"]}
+            tubos={["Polidos", "escovados", "decapados", "OD", "schedule"]}
+            maisInfo={["Conexões", "Telas", "Eletrodos", "etc..."]}
+          />
+          <Produto 
+            imagem={latao}
+            titulo="aço inox"
+            tipos={["304", "316", "310", "420", "430"]}
+            chapas={["Foscas", "escovadas", "polidas", "brilhantes"]}
+            barras={["Redondas", "chatas", "quadradas", "sextavadas", "cantoneiras"]}
+            tubos={["Polidos", "escovados", "decapados", "OD", "schedule"]}
+            maisInfo={["Conexões", "Telas", "Eletrodos", "etc..."]}
+          />
+          <Produto 
+            imagem={latao}
+            titulo="aço inox"
+            tipos={["304", "316", "310", "420", "430"]}
+            chapas={["Foscas", "escovadas", "polidas", "brilhantes"]}
+            barras={["Redondas", "chatas", "quadradas", "sextavadas", "cantoneiras"]}
+            tubos={["Polidos", "escovados", "decapados", "OD", "schedule"]}
+            maisInfo={["Conexões", "Telas", "Eletrodos", "etc..."]}
+          />
+          <Produto 
+            imagem={latao}
+            titulo="aço inox"
+            tipos={["304", "316", "310", "420", "430"]}
+            chapas={["Foscas", "escovadas", "polidas", "brilhantes"]}
+            barras={["Redondas", "chatas", "quadradas", "sextavadas", "cantoneiras"]}
+            tubos={["Polidos", "escovados", "decapados", "OD", "schedule"]}
+            maisInfo={["Conexões", "Telas", "Eletrodos", "etc..."]}
+          />
+          <Produto 
+            imagem={latao}
+            titulo="aço inox"
+            tipos={["304", "316", "310", "420", "430"]}
+            chapas={["Foscas", "escovadas", "polidas", "brilhantes"]}
+            barras={["Redondas", "chatas", "quadradas", "sextavadas", "cantoneiras"]}
+            tubos={["Polidos", "escovados", "decapados", "OD", "schedule"]}
+            maisInfo={["Conexões", "Telas", "Eletrodos", "etc..."]}
+          />
+          <Produto 
+            imagem={latao}
+            titulo="aço inox"
+            tipos={["304", "316", "310", "420", "430"]}
+            chapas={["Foscas", "escovadas", "polidas", "brilhantes"]}
+            barras={["Redondas", "chatas", "quadradas", "sextavadas", "cantoneiras"]}
+            tubos={["Polidos", "escovados", "decapados", "OD", "schedule"]}
+            maisInfo={["Conexões", "Telas", "Eletrodos", "etc..."]}
+          />
         </div>
       </main>
       <Rodape />
