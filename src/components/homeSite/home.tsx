@@ -1,11 +1,5 @@
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
-import { faDotCircle } from "@fortawesome/free-solid-svg-icons";
-import { faCube } from "@fortawesome/free-solid-svg-icons";
-import { faDiceSix } from "@fortawesome/free-solid-svg-icons";
-import { faDatabase } from "@fortawesome/free-solid-svg-icons";
-import { faCommentDots } from "@fortawesome/free-solid-svg-icons";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 import { faThumbsUp } from "@fortawesome/free-regular-svg-icons";
 import { faAlignJustify } from "@fortawesome/free-solid-svg-icons";
@@ -13,6 +7,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Solda from "../../img/solda-300x295.jpg";
 import imagem from "../../img/image12065.jpg";
 import latao from "../../img/mat-latao-pl6vgdao0ubk1slwsnzczcomufnopv7h8sogv2ipq0.jpg";
+import latao1 from "../../img/pngegg-pl6p4ffmp6aclzpdt4ybbvekwn5c48arwlfl9ghmm0.png";
+import latao2 from "../../img/pngwing.com-1-pl6u98haej9v9z9go0rok8j5hw9bhvywnayc1yh394.png";
+import latao3 from "../../img/fornecedor-de-tubo-de-bronze_10109_324454_1586883390307_cover-removebg-preview-pl6ymwwmv14gv484xofoby3svt2xq0xxbqnl7yolh4.png";
+import latao4 from "../../img/chapa-de-celeron-industrial-01-1-pl6zdguhxjh2ujnkvnn99qvl0o7867cxz64eadb7p4.png";
 import Aluminio from "../../img/produto-aluminio.png";
 import Rodape from "../rodape/rodape";
 import AOS from "aos";
@@ -241,7 +239,7 @@ const Home = () => {
             maisInfo={["Conexões", "Telas", "Eletrodos", "etc..."]}
           />
           <Produto 
-            imagem={latao}
+            imagem={latao1}
             titulo="aço inox"
             tipos={["304", "316", "310", "420", "430"]}
             chapas={["Foscas", "escovadas", "polidas", "brilhantes"]}
@@ -250,7 +248,7 @@ const Home = () => {
             maisInfo={["Conexões", "Telas", "Eletrodos", "etc..."]}
           />
           <Produto 
-            imagem={latao}
+            imagem={latao2}
             titulo="aço inox"
             tipos={["304", "316", "310", "420", "430"]}
             chapas={["Foscas", "escovadas", "polidas", "brilhantes"]}
@@ -259,7 +257,7 @@ const Home = () => {
             maisInfo={["Conexões", "Telas", "Eletrodos", "etc..."]}
           />
           <Produto 
-            imagem={latao}
+            imagem={latao3}
             titulo="aço inox"
             tipos={["304", "316", "310", "420", "430"]}
             chapas={["Foscas", "escovadas", "polidas", "brilhantes"]}
@@ -268,7 +266,7 @@ const Home = () => {
             maisInfo={["Conexões", "Telas", "Eletrodos", "etc..."]}
           />
           <Produto 
-            imagem={latao}
+            imagem={latao4}
             titulo="aço inox"
             tipos={["304", "316", "310", "420", "430"]}
             chapas={["Foscas", "escovadas", "polidas", "brilhantes"]}
