@@ -372,6 +372,7 @@ h3 {
   border-color: #093a52;
   border-radius: 46px 46px 46px 46px;
   padding: 10px 20px 6px 20px;
+  cursor: pointer;
 }
 .title_produtos {
   text-align: center;
@@ -595,4 +596,12 @@ h3 {
   .navbar a {
     display: none;
   }
+}
+
+.buto_contato {
+  cursor: pointer;
+}
+
+.rodape form input[type="button"] {
+  cursor: pointer;
 }
