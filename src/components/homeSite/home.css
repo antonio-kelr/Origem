@@ -11,6 +11,9 @@
 .div-mobile {
   display: none;
 }
+.container-origem {
+  overflow: hidden !important;
+}
 
 .div-mobile.abri-menu {
   display: flex;

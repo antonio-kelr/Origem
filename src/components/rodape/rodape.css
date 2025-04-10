@@ -104,6 +104,11 @@ footer {
   border-radius: 3px;
   width: 100%;
 }
+.form input:nth-child(3):hover {
+  cursor: pointer;
+  background-color: #b52a32;
+
+}
 .form input:nth-child(3) {
   background: #d91e26;
   font-family: "Roboto", Sans-serif;

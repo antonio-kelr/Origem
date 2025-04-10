@@ -68,7 +68,7 @@ const Home = () => {
   }, []);
 
   return (
-    <>
+    <div className="container-origem">
       <section className="home-site">
         <header className="header">
           <div className="header-info">
@@ -845,7 +845,7 @@ const Home = () => {
         </div>
       </main>
       <Rodape />
-    </>
+    </div>
   );
 };
 
